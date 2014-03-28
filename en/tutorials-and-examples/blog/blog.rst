@@ -103,9 +103,9 @@ statements into your database::
     INSERT INTO posts (title,body,created)
         VALUES ('Title strikes back', 'This is really exciting! Not.', NOW());
 
-The choices on table and column names are not arbitrary. If you
-follow CakePHP's database naming conventions, and CakePHP's class naming
-conventions (both outlined in
+The choices for table and column names are not arbitrary. If you
+follow CakePHP's conventions for naming databases and classes
+(outlined in
 :doc:`/getting-started/cakephp-conventions`), you'll be able to take
 advantage of a lot of free functionality and avoid configuration.
 CakePHP is flexible enough to accommodate even the worst legacy
@@ -166,7 +166,7 @@ in security hashes. The second is defining a custom number (or
 
 The security salt is used for generating hashes. Change the default
 ``Security.salt`` value in ``/app/Config/core.php``. The replacement value
-should be long, hard to guess and be as random as you can make it::
+should be long, hard to guess, and as random as you can make it::
 
     /**
      * A random string used in security hashing methods.
@@ -185,7 +185,7 @@ replacement value should be a large random integer::
 A Note on mod\_rewrite
 ======================
 
-Occasionally new users will run into mod\_rewrite issues. For example
+Occasionally, new users will run into mod\_rewrite issues. For example
 if the CakePHP welcome page looks a little funny (no images or CSS styles),
 it probably means mod\_rewrite is not functioning on your system. Please refer
 to one of the sections below about URL rewriting for your webserver to get
